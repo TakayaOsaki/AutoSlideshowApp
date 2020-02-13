@@ -127,6 +127,9 @@ class MainActivity : AppCompatActivity() {
                 if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     getContentsInfo()
                 }
+                else{
+                    finish()
+                }
         }
     }
 
